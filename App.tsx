@@ -24,7 +24,7 @@ function App() {
 
   const startSocketService = async () => {
     //const url = 'http://192.168.31.228:5000';
-    const url = 'http://api.jhotpotpay.com';
+    const url = 'https://api.jhotpotpay.com';
     await storeData(url);
     setMyKey(url); // ✅ update state
     TelephonyModule.startSocketService(url);
